@@ -4,7 +4,7 @@ a normal-mode implementation for EWOW
 
 ** Dependencies
 
-- "lib_goto_char.ahk"
+- ewow-goto-char
 
 ** Usage
 
@@ -18,3 +18,15 @@ Then bind keys.
 
 : #If !ignored_frame() && !evil
 : escape:: evil_mode()
+
+** Configuration
+
+- evil_disable_frames :: list of window-classes in which evil should
+                         not be activated
+
+- evil_auto_mode :: when nonzero, evil-mode is activated
+                    automatically, if you have ever activated
+                    evil-mode in the application
+
+- evil_mode_hook :: a hook runs when entering evil-mode
+
