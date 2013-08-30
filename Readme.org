@@ -1,0 +1,20 @@
+* lib_evil.ahk
+
+a normal-mode implementation for EWOW
+
+** Dependencies
+
+- "lib_goto_char.ahk"
+
+** Usage
+
+Load "lib_evil.ahk" in auto-exec section
+
+: #Include lib_evil.ahk
+
+and load "lib_evil_keys.ahk" at THE LAST OF auto-exec section.
+
+Then bind keys.
+
+: #If !ignored_frame() && !evil
+: escape:: evil_mode()
