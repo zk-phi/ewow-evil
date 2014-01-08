@@ -549,6 +549,7 @@ evil_replace_chars()
         send("{shift down}{left}{shift up}")
     send("^x")
     send(txt)
+    set_evil()
     run_hooks("after_change_hook")
     run_hooks("post_command_hook")
 }
