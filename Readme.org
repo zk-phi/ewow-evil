@@ -19,7 +19,7 @@ Then bind keys.
 : #If !ignored_frame() && !evil
 : escape:: evil_mode()
 
-** Configuration
+** Configurable Variables
 
 - evil_disable_frames :: list of window-classes in which evil should
                          not be activated
@@ -30,3 +30,6 @@ Then bind keys.
 
 - evil_mode_hook :: a hook runs when entering evil-mode
 
+** Know Limitations
+
++ =f= and =t= do not expand region in visual mode
