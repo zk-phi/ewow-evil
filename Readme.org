@@ -32,4 +32,4 @@ Then bind keys.
 
 ** Know Limitations
 
-+ =f= and =t= are not implemented
++ =f= and =t= do not expand region in visual mode
